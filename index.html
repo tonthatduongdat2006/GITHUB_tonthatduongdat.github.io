@@ -1,98 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi" class="scroll-smooth">
 
 <head>
-  <title>My Site</title>
+  <title>Tôn Thất Dương Đạt - Portfolio</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- PART 4: METADATA CHUẨN ĐÃ SỬA LINK THỰC TẾ CỦA ĐẠT -->
+  <meta name="title" content="Tôn Thất Dương Đạt - Portfolio">
+  <meta name="description" content="Hi, my name is Tôn Thất Dương Đạt. I'm the Web Developer.">
+  <meta name="keywords" content="web, web developer, portfolio, Tôn Thất Dương Đạt">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Vietnamese">
+  <meta name="author" content="Tôn Thất Dương Đạt">
+
+  <!-- og:url đã được đổi thành đường link thực tế của bạn -->
+  <meta property="og:title" content="Tôn Thất Dương Đạt - Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Hi, my name is Tôn Thất Dương Đạt. I'm the Web Developer." />
+  <meta property="og:image" content="/imgs/tech-bg.jpg" />
+  <meta property="og:url" content="https://tonthatduongdat2006.github.io/GITHUB_tonthatduongdat.github.io/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tôn Thất Dương Đạt - Portfolio">
+  <meta name="twitter:description" content="Hi, my name is Tôn Thất Dương Đạt. I'm the Web Developer.">
+  <meta name="twitter:image" content="/imgs/tech-bg.jpg">
+
+  <!-- Nhúng font chữ chuyên nghiệp từ Google Fonts -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com" rel="stylesheet">
+
   <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
+    body {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
   </style>
 </head>
 
-<body>
-    <!-- 1. HERO SECTION (Khung giới thiệu có ảnh nền máy tính) -->
-  <section id="hero" class="relative h-screen bg-cover bg-center flex items-center px-6 md:px-24" 
-           style="background-image: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)), url('https://unsplash.com');">
-    <div class="max-w-4xl text-left">
-      <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-        Hi, my name is <span class="text-teal-400 font-extrabold">Tôn Thất Dương Đạt</span>
+<body class="bg-white text-gray-800 m-0 p-0 box-border">
+
+  <!-- 1. HERO SECTION -->
+  <section id="hero" class="relative w-full h-screen bg-cover bg-center flex items-center justify-center overflow-hidden m-0 p-0" 
+           style="background-image: url('/imgs/tech-bg.jpg');">
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+    <div class="max-w-5xl text-center w-full px-6 flex flex-col items-center justify-center relative z-20">
+      <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight m-0 tracking-wide">
+        Hi, my name is <span class="text-cyan-400 font-extrabold block md:inline mt-2 md:mt-0 drop-shadow-[0_2px_10px_rgba(34,211,238,0.3)]">Tôn Thất Dương Đạt</span>
       </h1>
-      <p class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-4 tracking-tight">
+      <p class="text-4xl md:text-6xl font-extrabold text-gray-100 mt-6 tracking-tight m-0 drop-shadow-md">
         I'm the Web Developer.
       </p>
-      <a href="#about" class="inline-block mt-10 border-2 border-teal-400 text-teal-500 hover:bg-teal-400 hover:text-white font-medium py-3 px-8 uppercase tracking-wider transition-colors duration-300">
+      <a href="#about" class="inline-block mt-12 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-bold py-4 px-10 text-lg uppercase tracking-widest transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(34,211,238,0.2)] hover:shadow-[0_0_25px_rgba(34,211,238,0.5)]">
         Know More
       </a>
     </div>
   </section>
 
-  <!-- 2. ABOUT ME SECTION (Khung màu xanh ngọc chủ đạo kèm ảnh của bạn) -->
-  <section id="about" class="bg-teal-400 text-white py-24 px-6 md:px-24">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
-      <!-- Khung chứa ảnh chân dung thật của bạn -->
-      <div class="w-64 h-64 flex-shrink-0 overflow-hidden shadow-lg rounded-sm border-4 border-white bg-white">
-        <img src="https://screenshotbot.com" 
-             alt="Tôn Thất Dương Đạt" class="w-full h-full object-cover object-top">
+  <!-- 2. ABOUT ME SECTION -->
+  <section id="about" class="bg-teal-400 text-white min-h-screen w-full flex items-center justify-center p-8 md:p-24 m-0">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16 w-full">
+      <div class="w-80 h-80 flex-shrink-0 bg-gray-100 border border-gray-200 flex items-center justify-center shadow-2xl rounded-sm select-none">
+        <span class="text-gray-400 text-2xl font-semibold tracking-wide">My avatar</span>
       </div>
-      <!-- Nội dung văn bản mô tả theo mẫu của thầy -->
-      <div class="text-center md:text-left max-w-xl">
-        <h2 class="text-5xl font-bold uppercase tracking-wide mb-8">About Me</h2>
-        <p class="text-lg leading-relaxed mb-8 font-normal text-teal-50">
-          I love programming, application development, and research software architecture. My career objective is to become a Senior Software Engineer who masters software architecture, design principles, and modern development technologies.
+      <div class="text-center md:text-left max-w-2xl">
+        <h2 class="text-6xl font-black uppercase tracking-wider mb-8 m-0">About Me</h2>
+        <p class="text-xl md:text-2xl leading-relaxed mb-10 font-normal text-teal-50 m-0">
+          Tôi là Tôn Thất Dương Đạt. Tôi đam mê lập trình, phát triển ứng dụng và nghiên cứu kiến trúc phần mềm. Mục tiêu nghề nghiệp của tôi là trở thành một Kỹ sư phần mềm chuyên nghiệp, làm chủ các công nghệ phát triển hiện đại.
         </p>
-        <a href="#" class="inline-block border-2 border-white text-white hover:bg-white hover:text-teal-400 font-semibold py-3 px-8 uppercase tracking-wide transition-colors duration-300">
+        <a href="/CV_Ton_That_Duong_Dat.pdf" 
+           target="_blank" 
+           class="inline-block border-2 border-white text-white hover:bg-white hover:text-teal-400 text-xl font-bold py-4 px-10 uppercase tracking-widest transition-all duration-300 transform hover:-translate-y-1 shadow-md">
           View My CV
         </a>
       </div>
     </div>
   </section>
 
-  <!-- 3. CONTACT SECTION (Khung liên hệ nền trắng) -->
-  <section id="contact" class="bg-white py-24 px-6 text-center">
-    <div class="max-w-2xl mx-auto">
-      <h2 class="text-5xl font-extrabold uppercase tracking-wide text-gray-900 mb-8">Contact</h2>
-      <p class="text-teal-400 font-bold text-xl uppercase tracking-wider mb-3">
+  <!-- 3. CONTACT SECTION -->
+  <section id="contact" class="bg-white min-h-screen w-full flex items-center justify-center p-8 m-0">
+    <div class="max-w-4xl mx-auto text-center w-full">
+      <h2 class="text-6xl font-black uppercase tracking-wider text-gray-900 mb-8 m-0">Contact</h2>
+      <p class="text-teal-400 font-extrabold text-2xl md:text-3xl uppercase tracking-widest mb-4 m-0">
         I look forward to working with you
       </p>
-      <p class="text-gray-500 mb-10 font-normal text-base">
-        I'm so happy that my skills might bring some values to you. Let's connect for work.
+      <p class="text-gray-500 mb-12 font-normal text-xl m-0 max-w-2xl mx-auto leading-relaxed">
+        I'm so happy that my skills might bring values to you. Let's connect for work.
       </p>
-      <a href="mailto:example@email.com" class="inline-block bg-teal-400 hover:bg-teal-500 text-white font-bold py-4 px-10 uppercase tracking-widest transition-colors duration-300 shadow-md">
+      <a href="mailto:your-email@gmail.com" class="inline-block bg-teal-400 hover:bg-teal-500 text-white font-bold py-5 px-12 text-xl uppercase tracking-widest transition-colors duration-300 shadow-xl transform hover:scale-105">
         Send An Email Now
       </a>
     </div>
   </section>
 
-  <!-- 4. FOOTER (Chân trang chứa icon và bản quyền tên bạn) -->
-  <footer class="bg-zinc-900 text-gray-400 py-16 text-center">
-    <div class="flex justify-center space-x-8 text-3xl mb-8">
-      <a href="#" class="hover:text-white transition-colors">🐦</a>
-      <a href="#" class="hover:text-white transition-colors">💼</a>
-      <a href="#" class="hover:text-white transition-colors">🐱</a>
+  <!-- 4. FOOTER -->
+  <footer class="bg-zinc-900 text-gray-400 py-20 text-center w-full m-0">
+    <div class="flex justify-center space-x-12 text-5xl mb-10">
+      <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110">🐦</a>
+      <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110">💼</a>
+      <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110">🐱</a>
     </div>
-    <div class="w-1/4 mx-auto border-t border-zinc-800 my-4"></div>
-    <p class="text-sm tracking-widest text-gray-600 uppercase mt-4">
+    <div class="w-1/3 mx-auto border-t border-zinc-800 my-4"></div>
+    <p class="text-base tracking-widest text-gray-500 uppercase mt-6 m-0">
       © 2026 - Tôn Thất Dương Đạt
     </p>
   </footer>
+
   <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
