@@ -28,18 +28,71 @@
 </head>
 
 <body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Duong Dat
+    <!-- 1. HERO SECTION (Khung giới thiệu có ảnh nền máy tính) -->
+  <section id="hero" class="relative h-screen bg-cover bg-center flex items-center px-6 md:px-24" 
+           style="background-image: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)), url('https://unsplash.com');">
+    <div class="max-w-4xl text-left">
+      <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+        Hi, my name is <span class="text-teal-400 font-extrabold">Tôn Thất Dương Đạt</span>
+      </h1>
+      <p class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-4 tracking-tight">
+        I'm the Web Developer.
+      </p>
+      <a href="#about" class="inline-block mt-10 border-2 border-teal-400 text-teal-500 hover:bg-teal-400 hover:text-white font-medium py-3 px-8 uppercase tracking-wider transition-colors duration-300">
+        Know More
+      </a>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-<<<<<<< HEAD
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-=======
-      <p class="w3-large w3-center">10 days left</p>
->>>>>>> f89657f (Hoàn thành Task 3: Them thong bao 10 days left)
+  </section>
+
+  <!-- 2. ABOUT ME SECTION (Khung màu xanh ngọc chủ đạo kèm ảnh của bạn) -->
+  <section id="about" class="bg-teal-400 text-white py-24 px-6 md:px-24">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
+      <!-- Khung chứa ảnh chân dung thật của bạn -->
+      <div class="w-64 h-64 flex-shrink-0 overflow-hidden shadow-lg rounded-sm border-4 border-white bg-white">
+        <img src="https://screenshotbot.com" 
+             alt="Tôn Thất Dương Đạt" class="w-full h-full object-cover object-top">
+      </div>
+      <!-- Nội dung văn bản mô tả theo mẫu của thầy -->
+      <div class="text-center md:text-left max-w-xl">
+        <h2 class="text-5xl font-bold uppercase tracking-wide mb-8">About Me</h2>
+        <p class="text-lg leading-relaxed mb-8 font-normal text-teal-50">
+          I love programming, application development, and research software architecture. My career objective is to become a Senior Software Engineer who masters software architecture, design principles, and modern development technologies.
+        </p>
+        <a href="#" class="inline-block border-2 border-white text-white hover:bg-white hover:text-teal-400 font-semibold py-3 px-8 uppercase tracking-wide transition-colors duration-300">
+          View My CV
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- 3. CONTACT SECTION (Khung liên hệ nền trắng) -->
+  <section id="contact" class="bg-white py-24 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-5xl font-extrabold uppercase tracking-wide text-gray-900 mb-8">Contact</h2>
+      <p class="text-teal-400 font-bold text-xl uppercase tracking-wider mb-3">
+        I look forward to working with you
+      </p>
+      <p class="text-gray-500 mb-10 font-normal text-base">
+        I'm so happy that my skills might bring some values to you. Let's connect for work.
+      </p>
+      <a href="mailto:example@email.com" class="inline-block bg-teal-400 hover:bg-teal-500 text-white font-bold py-4 px-10 uppercase tracking-widest transition-colors duration-300 shadow-md">
+        Send An Email Now
+      </a>
+    </div>
+  </section>
+
+  <!-- 4. FOOTER (Chân trang chứa icon và bản quyền tên bạn) -->
+  <footer class="bg-zinc-900 text-gray-400 py-16 text-center">
+    <div class="flex justify-center space-x-8 text-3xl mb-8">
+      <a href="#" class="hover:text-white transition-colors">🐦</a>
+      <a href="#" class="hover:text-white transition-colors">💼</a>
+      <a href="#" class="hover:text-white transition-colors">🐱</a>
+    </div>
+    <div class="w-1/4 mx-auto border-t border-zinc-800 my-4"></div>
+    <p class="text-sm tracking-widest text-gray-600 uppercase mt-4">
+      © 2026 - Tôn Thất Dương Đạt
+    </p>
+  </footer>
+  <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
